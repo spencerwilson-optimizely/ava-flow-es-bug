@@ -22,3 +22,5 @@ $ npm test
 
 npm ERR! Test failed.  See above for more details.
 ```
+
+Note however that if the mjs files are renamed to js, it works: [master...renamed](https://github.com/spencerwilson-optimizely/ava-flow-es-bug/compare/master...renamed). Checkout `renamed` to verify.
