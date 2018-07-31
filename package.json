@@ -1,26 +1,8 @@
 {
 	"scripts": {
-		"test": "ava"
+		"test": "set -x; node -r esm src/index.mjs ; node src/index.js"
 	},
 	"devDependencies": {
-		"@babel/plugin-transform-flow-strip-types": "^7.0.0-beta.55",
-		"ava": "1.0.0-beta.6",
 		"esm": "^3.0.72"
-	},
-	"ava": {
-		"babel": {
-			"extensions": [
-				"js",
-				"mjs"
-			],
-			"testOptions": {
-				"plugins": [
-					"@babel/plugin-transform-flow-strip-types"
-				]
-			}
-		},
-		"require": [
-			"esm"
-		]
 	}
 }
