@@ -8,5 +8,5 @@ interface Foo {
 
 test('arrays are equal', t => {
 	t.deepEqual([1, 2], [1, 2]);
-	t.equal(add(1, 2), 3);
+	t.is(add(1, 2), 3);
 });
